@@ -1,0 +1,43 @@
+/* Basic layout (assuming this is in a separate file) */
+.container {
+  display: flex;
+}
+
+main {
+  flex: 1; /* Main content takes most of the space */
+}
+
+.sidebar {
+  width: 200px; /* Adjust width as needed */
+  background-color: #f0f0f0;
+  padding: 1rem;
+  position: fixed; /* Fix sidebar to the left */
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Sidebar list styling */
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-item {
+  display: flex; /* Allow icons and text to align horizontally */
+  align-items: center; /* Vertically align content */
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer; /* Simulate click behavior */
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.sidebar-item:hover {
+  background-color: #e0e0e0; /* Apply hover effect */
+}
+
+.sidebar-item i {
+  margin-right: 1rem; /* Spacing between icon and text */
+  color: #333; /* Icon color */
+}
